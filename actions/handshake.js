@@ -38,6 +38,8 @@ module.exports = function (router) {
             console.log('err:', err);
             console.log('result:', result);
 
+            //some kind of event
+
             res.send('great success');
           })
         });
