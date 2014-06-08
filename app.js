@@ -26,7 +26,11 @@ app.get('/', function(req,res){
 
   });
 });
-
+app.get('/login', function(req,res){
+  res.render('login', {
+    layout:''
+  });
+});
 
 var mkt = express.Router();
 require('./actions/marketing.js')(mkt);
