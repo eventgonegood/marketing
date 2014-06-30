@@ -1,7 +1,13 @@
 var express = require('express')
   , hbs = require('hbs')
   , bodyParser = require('body-parser')
-  , methodOverride = require('method-override');
+  , methodOverride = require('method-override')
+  ;
+
+// Handlebars Configuration
+// ========================
+require('./lib/handlebars_helpers.js')(hbs)
+
 
 // Express Configuration
 // =====================
@@ -14,21 +20,24 @@ app.use(methodOverride());
 app.use(express.static(__dirname + '/public'));
 
 
-//handlebars helpers
-hbs.registerHelper('json', function(context) {
-  return JSON.stringify(context);
-});
+
 
 // ROUTES
 // =============================
 app.get('/', function(req,res){
   res.render('index', {
-
+    layout:''
   });
 });
 app.get('/login', function(req,res){
   res.render('login', {
     layout:''
+  });
+});
+app.get('/dashboard', function(req,res){
+  res.render('dashboard', {
+    title : 'Dashboard',
+    breadcrumbs : [{name:'home',active:false,url:'a'},{name:'hi',active:true,url:'b'}]
   });
 });
 
@@ -40,6 +49,9 @@ var hs = express.Router();
 require('./actions/handshake.js')(hs);
 app.use('/hs', hs);
 
+// var imp = express.Router();
+// require('./actions/import_orders.js')(imp);
+// app.use('/import', imp);
 
 // START THE SERVER
 // ================
