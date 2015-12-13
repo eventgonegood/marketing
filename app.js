@@ -29,6 +29,11 @@ app.get('/', function(req,res){
     layout:''
   });
 });
+app.get('/styleguide', function(req,res){
+  res.render('styleguide', {
+    layout:'layout'
+  });
+});
 app.get('/signup', function(req,res){
   res.render('login', {
     layout:''
