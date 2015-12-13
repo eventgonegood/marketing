@@ -112,11 +112,11 @@ header nav select {
 /*Intro*/
 
 section#intro {
-	background: url(/images/yourbg.jpg) center no-repeat fixed;
+	background: url(/images/caleb-kerr-photo.jpg) center no-repeat fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 50px 0;
-	background-color: #66574a;
+	background-color: #bcb;
 }
 
 section#intro h1 {
@@ -154,7 +154,7 @@ section#intro .order-form div {
 }
 
 section#intro .order-form i {
-	color: #66574a;
+	color: #bcb;
 	margin: 10px 0;
 	text-align: center;
 	display: block;
@@ -193,7 +193,7 @@ section#intro .order-form button.sent {
 }
 
 section#intro .order-form button {
-	background: #66574a;
+	background: #bcb;
 	outline: none;
 	border: none;
 	display: block;
@@ -261,13 +261,13 @@ section#about .info ul.list-services li {
 }
 
 section#about .info ul.list-services li i {
-	color: #66574a;
+	color: #bcb;
 	margin-right: 5px;
 }
 
 section#about .testimonials blockquote {
 	font-family: 'open sans';
-	border-left-color: #66574a;
+	border-left-color: #bcb;
 	font-size: 15px;
 }
 
@@ -282,10 +282,10 @@ section#about .testimonials blockquote span strong {
 
 section#features {
 	padding: 50px 0;
-	background: url(/images/yourbg2.jpg) center no-repeat fixed;
+	background: url(/images/fittest-games-announcer.jpg) center no-repeat fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-color: #66574a;
+	background-color: #bcb;
 }
 
 section#features .preambule h3 {
@@ -340,7 +340,7 @@ section#faq .question i {
 	margin-right: 5px;
 	font-size: 20px;
 	margin-top: 8px;
-	color: #66574a;
+	color: #bcb;
 }
 
 /*Clients*/
@@ -350,7 +350,7 @@ section#clients {
 	-webkit-background-size: cover ;
 	background-size: cover ;
 	padding: 50px 0;
-	background-color: #66574a;
+	background-color: #bcb;
 }
 
 section#clients .preambule h3 {
@@ -410,7 +410,7 @@ footer#footer .social li a {
 	--webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	border: 2px solid #66574a;
+	border: 2px solid #bcb;
 	padding: 6px;
 	width: 15px;
 	height: 15px;
@@ -433,7 +433,7 @@ footer#footer .social li a:hover {
 }
 
 footer#footer .social li i {
-	color: #66574a;
+	color: #bcb;
 	font-size: 16px;
 }
 

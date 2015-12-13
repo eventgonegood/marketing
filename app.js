@@ -29,29 +29,11 @@ app.get('/', function(req,res){
     layout:''
   });
 });
-app.get('/login', function(req,res){
+app.get('/signup', function(req,res){
   res.render('login', {
     layout:''
   });
 });
-app.get('/dashboard', function(req,res){
-  res.render('dashboard', {
-    title : 'Dashboard',
-    breadcrumbs : [{name:'home',active:false,url:'a'},{name:'hi',active:true,url:'b'}]
-  });
-});
-
-var mkt = express.Router();
-require('./actions/marketing.js')(mkt);
-app.use('/mkt', mkt);
-
-var hs = express.Router();
-require('./actions/handshake.js')(hs);
-app.use('/hs', hs);
-
-// var imp = express.Router();
-// require('./actions/import_orders.js')(imp);
-// app.use('/import', imp);
 
 // START THE SERVER
 // ================
