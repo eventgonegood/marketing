@@ -455,6 +455,10 @@ footer#footer .social li i {
 			width: 100% !important;
 		}
 
+		section#intro .main-text {
+			background: rgba(0, 0, 0, 0.3);
+		}
+		
 		section#intro .order-form button {
 			box-sizing: border-box;
 			width: 100%;
@@ -489,7 +493,9 @@ footer#footer .social li i {
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+
+	}
 
 
 /* #Font-Face
