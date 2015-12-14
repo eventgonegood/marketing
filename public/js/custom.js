@@ -52,16 +52,16 @@ $(document).ready(function(){
 
 // Validate Form And Handle Sending Confirmation
 
-$(function() {
-    $('.submit').click(function() {
-        $("#contact").validate({
-            submitHandler: function(form){
-                jQuery("#contact .submit").html('Your request has been sent.');
-                jQuery("#contact .submit").addClass("sent");
-                jQuery("#contact").ajaxSubmit();
-                jQuery("#contact .submit").attr("disabled", "true");
-                return false;
-            }
-        });
-    });
-});
+// $(function() {
+//     $('.submit').click(function() {
+//         $("#contact").validate({
+//             submitHandler: function(form){
+//                 jQuery("#contact .submit").html('Your request has been sent.');
+//                 jQuery("#contact .submit").addClass("sent");
+//                 jQuery("#contact").ajaxSubmit();
+//                 jQuery("#contact .submit").attr("disabled", "true");
+//                 return false;
+//             }
+//         });
+//     });
+// });

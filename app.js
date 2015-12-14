@@ -29,7 +29,7 @@ app.use(helmet.hidePoweredBy())
 // =============================
 app.get('/', function(req,res){
   res.render('index', {
-    layout:''
+    layout:'layout'
   });
 });
 app.get('/styleguide', function(req,res){
