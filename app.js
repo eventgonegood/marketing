@@ -2,6 +2,7 @@ var express = require('express')
   , hbs = require('hbs')
   , bodyParser = require('body-parser')
   , methodOverride = require('method-override')
+  , helmet = require('helmet')
   ;
 
 // Handlebars Configuration
@@ -18,6 +19,8 @@ app.set('view engine', 'hbs');
 app.use(bodyParser());
 app.use(methodOverride());
 app.use(express.static(__dirname + '/public'));
+app.use(helmet.hsts());
+app.use(helmet.hidePoweredBy())
 
 
 

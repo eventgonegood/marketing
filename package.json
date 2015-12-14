@@ -8,8 +8,8 @@
     "express": "4.x",
     "gravatar": "^1.0.6",
     "hbs": ">= 2.7.x",
+    "helmet": "^0.15.0",
     "method-override": "^2.0.2",
-    "pg": "^3.3.0",
     "request": "^2.36.0"
   }
 }
