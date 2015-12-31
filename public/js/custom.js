@@ -21,27 +21,6 @@
 
  });
 
-/* Smooth scroll One page Nav-----------------------------------------------*/
-$(document).ready(function(){
-    $('nav').onePageNav({
-        currentClass: 'current',
-        changeHash: false,
-        scrollSpeed: 750,
-        scrollOffset: 0,
-        scrollThreshold: 0.5,
-        filter: '',
-        easing: 'swing',
-        begin: function() {
-            //I get fired when the animation is starting
-        },
-        end: function() {
-            //I get fired when the animation is ending
-        },
-        scrollChange: function($currentListItem) {
-            //I get fired when you enter a section and I pass the list item of the section
-        }
-    });
-});
 
 $(document).ready(function(){
 
@@ -65,3 +44,13 @@ $(document).ready(function(){
 //         });
 //     });
 // });
+
+$(document).ready(function(){
+    $('form[data-submit]').on('submit', function(){
+       var $this = $(this);
+       var key = $this.data('submit');
+       analytics.track('email-signup', {
+          'data' : key
+       });
+    });
+});
